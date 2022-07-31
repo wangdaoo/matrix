@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /*
+    Visit https://aka.ms/tsconfig.json to read more about this file
+    https://www.tslang.cn/docs/handbook/compiler-options.html
+    https://www.jianshu.com/p/0383bbd61a6b
+    https://segmentfault.com/a/1190000021749847
+    */
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "ES2016",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNext", "DOM"],
+    "allowJs": false,
+    "jsx": "preserve",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./types",
+    "sourceMap": false,
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {},
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.d.ts", "packages/cli/index.js",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.d.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/dist",
+  ]
+}
